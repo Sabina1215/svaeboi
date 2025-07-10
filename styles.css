@@ -1,0 +1,18 @@
+:root {
+    --color-yellow: #FFCC00;
+    --color-biege: #f8f6f2;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --text-color: rgb(0, 0, 0);
+    --span: 2rem;
+    --span-small: 1rem;
+    --span-large: 4rem;
+    --span-x-large: 8rem;
+    --container-gap: var(--span);
+    --block-padding: var(--span-x-large);
+    --block-inner-padding: var(--span-x-large);
+    --item-width: 35rem;
+    --page-width: 1300px;
+    --font: "Roboto", sans-serif;
+    --root-font-size: 10px;
+}

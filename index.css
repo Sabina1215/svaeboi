@@ -1,0 +1,65 @@
+body{width:100%;min-height:100%;margin:0;vertical-align:top;background:var(--color-white);color:var(--text-color);font-size:1.8rem;font-family:var(--font);font-weight:normal;line-height:1.5;}
+html{font-size:10px;}
+hr{margin:0;}
+a{color:var(--color-yellow);text-decoration:underline;}
+h2{font-size:3.6rem;text-align:center;margin:0 0 4rem 0;}
+@media (max-width:640px){h2{text-align:center;font-size:3.2rem;}}
+@media (max-width:450px){p{font-size:1.6rem;}h3{font-size:1.8rem;}}
+
+
+#header{position:relative;z-index:1000;background:linear-gradient(#FFCC00,transparent 30rem);overflow:hidden;}
+.description{font-style:italic;border-left:4px solid var(--color-yellow);padding:2rem;background:#1c1c1c9c;color:var(--color-biege);}
+.description p{margin:0;}
+#header .bg{position:absolute;display:block;left:82%;top:-6rem;bottom:-6rem;width:100rem;background:url(glavnaya.png) center left/contain no-repeat;}
+#header .content-part h1{font-size:4.2rem;font-weight:bold;margin-bottom:2rem;}
+.content{z-index:3;}
+#header .content-part{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;max-width:80rem;min-height:40rem;position:relative;}
+.page-block{padding:var(--block-padding);position:relative;color:var(--text-color);background:var(--background-color);--text-color:inherit;--background-color:transparent;}
+@media (max-width:1024px){#header .bg{left:45%;}}
+@media (max-width:768px){#header .bg{position:relative;left:auto;bottom:auto;top:auto;width:100%;padding-top:60%;background-position:center;}}
+@media (max-width:640px){#header .content-part h1{text-align:center;font-size:3.2rem;}}
+
+
+.installations-container{display:grid;grid-template-columns:repeat(auto-fill,minmax(64rem,1fr));gap:2rem;}
+@media (max-width:768px){.installations-container{grid-template-columns:repeat(auto-fill,minmax(30rem,1fr));}.page-block{padding:var(--span-large);}}
+@media (max-width:425px){.installations-container{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));}.page-block{padding:var(--span);}}
+.installation-card{width:100%;border-radius:2rem;transition:0.3s;background:#F0F0F0;cursor:pointer;font-size:1.6rem;display:flex;border:#939393 solid 1px;}
+.installation-card:hover{border:#FFCC00 solid 1px;}
+.content{padding:1.5rem;}
+.all{width:100%;}
+.image{display:flex;width:50rem;overflow:hidden;border-radius:2rem 0 0 2rem;}
+.image img{width:100%;height:100%;object-fit:cover;transition:transform 0.3s;}
+.image img:hover{transform:scale(1.05);}
+.title{margin-top:2rem;font-weight:bold;font-size:2rem;}
+@media (max-width:768px){.installation-card{flex-direction:column;}.all{width:90%;}.image{width:100%;height:25rem;border-radius:2rem 2rem 0 0;}.content{padding:2rem;}}
+@media (max-width:480px){.image{height:20rem;}.installation-card{font-size:1.4rem;}}
+
+
+.montage-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(45rem,1fr));gap:var(--span-small);}
+.montage-card{width:100%;background:linear-gradient(90deg,#FFCC00 2%,#F0F0F0);border-radius:2rem;margin-bottom:2rem;}
+@media (max-width:768px){.montage-cards{grid-template-columns:repeat(auto-fill,minmax(30rem,1fr));}}
+@media (max-width:425px){.montage-cards{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));}}
+
+
+.calculation-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(30rem,1fr));gap:var(--span-small);}
+.calculation-card{width:100%;background:#F0F0F0;border:#FFCC00 solid 1px;border-radius:2rem;}
+@media (max-width:340px){.calculation-cards{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));}}
+
+
+#equipment-container{background-image:url(banner.webp);}
+#equipment-container h2{color:var(--color-white);}
+.equipment-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(40rem,1fr));gap:var(--span-small);}
+.equipment-card{width:100%;background:#F0F0F0;border:#FFCC00 solid 1px;border-radius:2rem;}
+@media (max-width:490px){.equipment-cards{grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));}}
+
+
+.price{display:grid;grid-template-columns:repeat(auto-fill,minmax(45rem,1fr));gap:var(--span-small);}
+.price .image{width:100%;border-radius:0;}
+@media (max-width:549px){.price{grid-template-columns:repeat(auto-fill,minmax(22rem,1fr));}}
+
+
+#footer{background:#393939;padding:2rem 0;}
+#footer .block-container{display:flex;align-items:center;justify-content:center;}
+#footer .developer{font-size:1.5rem;display:inline-flex;flex-direction:column;gap:0;align-items:center;}
+#footer .developer .text{color:var(--color-white);text-align:center;}
+#footer .developer .logo{display:block;width:18rem;height:5rem;background:url(logo.png) center/contain no-repeat;}
